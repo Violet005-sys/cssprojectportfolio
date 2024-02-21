@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+   --primary-color: #F0386B;
+   --secondary-color: #FF99B9;
+   --tertiary-color: #FCEDEF;
+   --tertiary-color2: #FEC3D4;
+   --background-color: #FDF8F8;
+   --navitem-color: #F7EDF0;
+   --border-color: #FCEEF3;
+   --cardtitle-color: #FCEEF3;
+   --primary-font-family: "Pacifico", cursive;
+   --secondary-font-family: "Josefin Sans", sans-serif;
+   /* --shadow: 0 3px 20px 1px #FF5D8F; */
+   --shadow: 0 4px 10px 0px #FF5D8F;
+   
+    
+
+}
+
+.josefin-sans {
+   font-family: "Josefin Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 500;
+   font-style: normal;
+ }
+
+
+
+.pacifico-regular {
+      font-family: "Pacifico", cursive;
+      font-weight: 400;
+      font-style: normal;
+      
+    }
+
+    @media (min-width :768px){
+       .navmenu{
+         font-size: 16px;
+
+       }
+
+       .brand-name {
+         font-size: 24px;
+
+       }
+       button{
+         font-size: 16px;
+       }
+
+       .chipcontainers{
+         display: grid;
+         grid-template-columns: 160px 200px;
+         grid-template-rows: 80px 80px;
+       }
+    }
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background-color: #F7EDF0;
+    width: 100%;
+}
+
+.bodysection{
+   padding: 0 100px 0 100px;
+}
+
+header{
+   background-color: var(--secondary-color);
+}
+nav{
+    display: flex;
+    width: auto;
+    padding: 24px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+    border: var(--border-color);
+    border-width: 2px;
+    border-style: solid;
+    position: sticky;
+   
+}
+ .brand-name{
+    font-size: 32px;
+    text-align: left;
+    justify-content: left;
+    font-family: var(--primary-font-family);
+  
+
+    
+
+ }
+.brand-name a{
+   color: var(--primary-color);
+
+ }
+
+
+
+ .navmenu{
+    display: inline;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 500;
+    font-family: var(--secondary-font-family);
+    font-size: 24px;
+ }
+
+ li {
+    display: inline;
+    list-style: none;
+    padding: 32px;
+    
+
+ }
+
+ a{
+   text-decoration: none;
+   color: var(--navitem-color);
+
+
+ }
+
+ button{
+    padding: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: end;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--secondary-font-family);
+    background-color: var(--primary-color);
+    color: var(--border-color);
+    border-color: var(--primary-color);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+
+
+ }
+
+ .herosection{
+    display: flex;
+
+    justify-content: space-between;
+   /*  gap: 24px; */
+    align-items: center;
+    margin: 72px 0;
+    
+
+ }
+
+
+
+
+
+
+ .leftcontainer{
+    /* display: flex; */
+    width: 70%;
+    position: relative;
+    
+ }
+h6{
+   color: var(--tertiary-color2);
+   font-size: 24px;
+   font-weight: 300;
+   text-align: center; 
+}
+
+ .herotitle{
+    text-align: center;
+    font-family: var(--primary-font-family);
+    /* padding: 24px; */
+    margin-bottom: 48px;
+    
+    }
+
+
+
+ /* .herotitle */ h1{
+   font-size: 40px;
+   color: var(--primary-color);
+   padding: 0%;
+   margin: 0%;
+   text-align: left;
+}
+.titlename{
+   font-size: 96px;
+   text-align: center;
+}
+
+ 
+.chipcontainers{
+    display: grid;
+    grid-template-columns: 160px 200px 160px;
+    height: auto;
+   /*  grid-template-rows: 50px; */
+    margin: 48px;
+    grid-gap: 40px;
+   align-items: last baseline;
+    text-align: center;
+    position: absolute;
+    left: 124px;
+    top: 280px;
+   
+    
+    
+   
+    
+}
+ .chipcontainers div{
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    padding: 8px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    box-shadow: var(--shadow);
+
+    
+    
+ }
+
+ .rightcontainer{
+    justify-content: right;
+ }
+
+
+ .infocards{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 160px;
+   
+
+ }
+
+ .card{
+   border-width: 4px;
+    border-style: solid;
+    border-color: var(--border-color);
+    border-radius: 20px;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    color: var(--border-color);
+    box-shadow: var(--shadow);
+
+
+
+ }
+ 
+
+ #aboutcard{
+    justify-content: left;
+ }
+ #workcard{
+   flex-direction: column;
+    align-self: flex-end;
+    
+ }
+ #aboutcard{
+    justify-content: left;
+ }
+
+ .cardtitle{
+   display: inline;
+    padding: 12px;
+    /* padding-right: 40px; */
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--border-color);
+    border-radius: 20px;
+    display: inline;
+    font-size: 24px;
+    text-align: left;
+    max-width: 160px;
+    font-family: var(--primary-font-family);
+
+ }
+
+ .cardtext{
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 20px;
+    font-family: var(--secondary-font-family);
+
+ }
+
+ .cardlink{
+   align-self: flex-end;
+   text-decoration: none;
+   font-size: 14px;
+   font-weight: bold;
+   font-family: var(--secondary-font-family);
+   color: var(--primary-color);
+ }
+
+/*  .contactform{
+   display: flex;
+ } */
+.form{
+   /* justify-self: center; */
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   row-gap: 24px;
+   background-color: var(--primary-color);
+   border: 2px solid var(--border-color);
+   box-shadow: var(--shadow);
+   border-radius: 20px;
+   margin-top: 100px;
+   padding: 24px;
+   width: 40%;
+
+}
+.input, #message{
+   width: 90%;
+   height: 45px;
+   border: 1px solid var(--border-color);
+   background: none;
+   padding: 8px;
+   
+}
+::placeholder{
+   color: var(--tertiary-color2);
+   font-size: 12px;
+   font-family: var(--secondary-font-family);
+   font-weight: 200;
+
+
+}
+
+.label{
+   display: block;
+   margin: 6px;
+   font-size: 14px;
+   font-family: var(--secondary-font-family);
+   color: var(--navitem-color);
+   font-weight: 500;
+
+}
+
+form .cardtitle{
+   font-weight: 300;
+   border: none;
+   border-bottom: 2px solid var(--border-color);
+   border-radius: 0;
+   padding: 0px;
+}
+
+form button{
+   border-color: var(--tertiary2-color);
+   border-width: 2px;
+
+   width: 30%;
+   font-size: 16px;
+}
+footer{
+   height: 40px;
+   background-color: var(--secondary-color);
+   margin-top: 40px;
+   padding: 16px;
+}
+footer h6{
+   font-family: var(--primary-font-family);
+   font-size: 12px;
+   color: black;
+   text-align: center;
+   padding: 12px;
+
+ }
+
